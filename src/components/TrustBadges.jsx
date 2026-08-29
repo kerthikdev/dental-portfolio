@@ -6,7 +6,7 @@ export default function TrustBadges() {
   const stats = [
     {
       icon: Award,
-      value: "15+ Years",
+      value: "10+ Years",
       label: "Clinical Leadership",
       sub: "Salem's Trusted Clinic Since 2015",
       iconBg: "bg-sky-50 text-sky-600 border-sky-200"
