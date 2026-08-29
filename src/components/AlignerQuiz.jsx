@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, CheckCircle2, ArrowRight, RotateCcw, ShieldCheck, HeartHandshake, Eye, Award, Check } from 'lucide-react';
+import { Sparkles, CheckCircle2, ArrowRight, RotateCcw, ShieldCheck, HeartHandshake, Eye, Award, Check, Calendar } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { quizQuestions, clinicInfo } from '../data/clinicData';
 

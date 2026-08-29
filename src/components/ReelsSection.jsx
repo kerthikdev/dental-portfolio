@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Volume2, VolumeX, Sparkles, Heart, Eye, CheckCircle2, X, Film, ArrowRight, MonitorPlay } from 'lucide-react';
+import { Play, Volume2, VolumeX, Sparkles, Heart, Eye, CheckCircle2, X, Film, ArrowRight, MonitorPlay, Calendar } from 'lucide-react';
 import { aiMockReels } from '../data/clinicData';
 
 export default function ReelsSection({ onOpenBooking }) {
