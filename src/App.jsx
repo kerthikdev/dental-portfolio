@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InvoicePage from './components/InvoicePage';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TrustBadges from './components/TrustBadges';
@@ -19,6 +20,7 @@ import FloatingActions from './components/FloatingActions';
 import BookingModal from './components/BookingModal';
 
 export default function App() {
+  const [view, setView] = useState('invoice'); // 'invoice' by default
   const [bookingModalState, setBookingModalState] = useState({
     isOpen: false,
     initialData: {}
@@ -38,8 +40,23 @@ export default function App() {
     });
   };
 
+  if (view === 'invoice') {
+    return <InvoicePage onPreviewWebsite={() => setView('portfolio')} />;
+  }
+
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-900 selection:bg-sky-500 selection:text-white flex flex-col justify-between">
+      {/* Top Banner to Switch Back to Invoice */}
+      <div className="bg-slate-900 text-white px-4 py-2 text-xs flex items-center justify-between">
+        <span>Previewing Siva Tooth Care Dental Website</span>
+        <button 
+          onClick={() => setView('invoice')}
+          className="px-3 py-1 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-bold text-[11px] transition-all"
+        >
+          ← Back to Invoice Page
+        </button>
+      </div>
+
       {/* Navigation */}
       <Navbar onOpenBooking={handleOpenBooking} />
 
