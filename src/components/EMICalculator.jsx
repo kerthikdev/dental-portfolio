@@ -7,7 +7,7 @@ export default function EMICalculator({ onOpenBooking }) {
     { name: "Full Mouth Dental Implants (All-on-4 / All-on-6)", estimatedAmount: 180000 },
     { name: "Invisalign Clear Aligners (Full Arch)", estimatedAmount: 120000 },
     { name: "Single Dental Implant with Zirconia Crown", estimatedAmount: 32000 },
-    { name: "Laser Aesthetic Smile Makeover & Veneers", estimatedAmount: 45000 }
+    { name: "Aesthetic Smile Makeover & Ceramic Veneers", estimatedAmount: 45000 }
   ];
 
   const tenures = [3, 6, 9, 12, 18, 24];

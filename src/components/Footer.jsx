@@ -86,7 +86,7 @@ export default function Footer({ onOpenBooking }) {
               </li>
               <li>
                 <a href="#treatments" className="hover:text-sky-300 transition-colors block py-0.5">
-                  Diode Laser Cosmetic Dentistry
+                  Aesthetic Smile Makeover & Veneers
                 </a>
               </li>
               <li>

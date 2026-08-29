@@ -123,14 +123,14 @@ export const allTreatments = [
     category: "Orthodontics",
     description: "Discreet, removable clear aligners to straighten crooked or spaced teeth without painful metal brackets or dietary restrictions.",
     highlights: ["Virtually invisible aligner trays", "Eat whatever you like", "Custom 3D smile planning", "Easy 0% EMI payment options"],
-    popular: false
+    popular: true
   },
   {
-    id: "laser-whitening",
-    title: "Laser Teeth Whitening & Cleaning",
+    id: "teeth-whitening",
+    title: "Teeth Whitening & Ultrasonic Scaling",
     category: "Aesthetic",
-    description: "Advanced diode soft-tissue lasers and deep ultrasonic scaling for a clean, sparkling, camera-ready smile in a single 45-minute visit.",
-    highlights: ["Noticeable 6-8 shades lighter", "Ultrasonic gentle plaque removal", "Dark gum depigmentation", "Zero bleeding and rapid healing"],
+    description: "Professional enamel-safe whitening and deep ultrasonic scaling for a clean, sparkling, camera-ready smile in a single 45-minute visit.",
+    highlights: ["Noticeable 6-8 shades lighter", "Ultrasonic gentle plaque removal", "Enamel-safe stain removal", "Fast same-day results"],
     popular: false
   },
   {
@@ -138,7 +138,15 @@ export const allTreatments = [
     title: "Preventive & Family Dentistry",
     category: "General",
     description: "Complete dental hygiene, checkups, fluoride treatments, and friendly routine care for children, adults, and seniors.",
-    highlights: ["Ultrasonic gentle plaque removal", "Preventive pit & fissure sealants", "Routine oral screening", "Child-friendly anxiety-free care"],
+    highlights: ["Fluoride therapy & sealants", "Routine scaling & polishing", "Cavity risk assessment", "Child-friendly atmosphere"],
+    popular: false
+  },
+  {
+    id: "wisdom-teeth",
+    title: "Wisdom Tooth Removal & Minor Oral Surgery",
+    category: "Surgical",
+    description: "Gentle surgical extractions for impacted wisdom teeth, cyst management, and oral minor surgeries under local anesthesia.",
+    highlights: ["Painless local anesthesia", "Specialist surgical precision", "Fast postoperative recovery", "Digital X-Ray guided"],
     popular: false
   }
 ];
@@ -185,7 +193,7 @@ export const aiMockReels = [
   },
   {
     id: "reel-4",
-    title: "Laser Smile Whitening & Aesthetic Designing",
+    title: "Professional Smile Whitening & Aesthetic Designing",
     tag: "Smile Makeover",
     category: "Aesthetic Dentistry",
     videoUrl: "https://player.vimeo.com/external/406087786.sd.mp4?s=1d32ba53a812df93f0b2f5bca9be36e1b6f6f966&profile_id=164&oauth2_token_id=57447761",
@@ -193,7 +201,7 @@ export const aiMockReels = [
     doctor: "Dr. Kiran Kumar (BDS)",
     views: "45.2K",
     likes: "3.8K",
-    badge: "AESTHETIC LASER",
+    badge: "AESTHETIC SMILE",
     thumbnail: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600&auto=format&fit=crop"
   }
 ];
@@ -259,14 +267,6 @@ export const technologyData = [
     badge: "DIGITAL DIAGNOSTICS • ACTIVE IN CLINIC",
     benefit: "Immediate digital diagnosis on screen with zero waiting time and minimal radiation.",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600&auto=format&fit=crop"
-  },
-  {
-    title: "Painless Diode Dental Laser",
-    subtitle: "Bloodless Cosmetic Procedures",
-    description: "Advanced soft-tissue lasers for painless gum contouring, dark pigmentation removal, and accelerated tissue healing without stitches.",
-    badge: "PRECISION STANDARD • ACTIVE IN CLINIC",
-    benefit: "No scalpels, minimal bleeding, and rapid same-day recovery.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop"
   },
   {
     title: "Rotary Endodontic Apex Locators",
