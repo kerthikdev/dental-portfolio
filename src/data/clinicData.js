@@ -23,8 +23,8 @@ export const clinicInfo = {
       hoursWeek: "Mon – Sat: 9:30 AM – 8:30 PM",
       hoursSun: "Sunday: 10:00 AM – 1:30 PM",
       phone: "79040 91317",
-      mapsUrl: "https://maps.google.com/?q=Siva+Tooth+Care+New+Muruga+complex+Thattanchavadi+Karuppur+Salem+636012",
-      embedMapQuery: "New+Muruga+complex+Thattanchavadi+Karuppur+Tamil+Nadu+636012"
+      mapsUrl: "https://maps.google.com/?q=P3HX%2BW9+Karuppur%2C+Tamil+Nadu",
+      embedMapQuery: "P3HX+W9 Karuppur, Tamil Nadu"
     }
   ]
 };
