@@ -66,7 +66,7 @@ export const flagshipTreatments = [
       "Customized All-on-4 & All-on-6 fixed full arch titanium bridges",
       "High-definition digital X-ray diagnostics for painless keyhole placement",
       "Eat crisp apples, solid foods, and snacks without worry",
-      "0% Interest EMI options with simple monthly installments",
+      "Flexible stage-wise installment payment options",
       "Permanent replacement for loose, uncomfortable dentures"
     ],
     idealFor: "Patients with missing teeth, severe bone loss, or loose dentures",
@@ -244,9 +244,9 @@ export const advantagesData = [
   },
   {
     number: "06",
-    title: "0% Interest EMI Available",
-    subtitle: "Flexible Monthly Options",
-    desc: "Easy, flexible monthly payment options and zero-cost EMI plans with instant approval for major dental treatments.",
+    title: "Flexible Installments",
+    subtitle: "Pay in Easy Stages",
+    desc: "Convenient stage-wise installment payment options for clear aligners, dental implants, and major treatments without financial burden.",
     icon: "CreditCard"
   }
 ];
@@ -378,8 +378,8 @@ export const faqData = [
     a: "Yes, 100% complimentary with zero obligation. You receive a digital evaluation and consultation with Dr. Kiran Kumar."
   },
   {
-    q: "How does the 0% Interest EMI plan work?",
-    a: "We offer instant zero-interest financing in partnership with leading healthcare credit providers. You can split major treatments into 3, 6, 9, 12, or 24 flexible monthly installments without hidden charges."
+    q: "How do the treatment installment payment plans work?",
+    a: "For treatments like Invisalign Clear Aligners and Dental Implants, we offer convenient stage-wise installment payment plans so you can pay comfortably as your treatment progresses with complete transparency and zero hidden charges."
   },
   {
     q: "Where is Siva Tooth Care clinic located in Salem?",

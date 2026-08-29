@@ -98,7 +98,7 @@ _Sent via Siva Tooth Care Website_`;
 
             {/* Subtitle Description */}
             <p className="text-sm sm:text-base lg:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Advanced dental care for confident, healthy smiles at <strong className="text-slate-900 font-bold">Siva Tooth Care</strong> (Karuppur, Salem) — with specialist-led treatment in <strong className="text-slate-900 font-bold">Root Canal Treatment (RCT)</strong>, <strong className="text-slate-900 font-bold">Dental Implants</strong>, and <strong className="text-slate-900 font-bold">Invisalign Clear Aligners</strong> with easy 0% Interest EMI plans.
+              Advanced dental care for confident, healthy smiles at <strong className="text-slate-900 font-bold">Siva Tooth Care</strong> (Karuppur, Salem) — with specialist-led treatment in <strong className="text-slate-900 font-bold">Root Canal Treatment (RCT)</strong>, <strong className="text-slate-900 font-bold">Dental Implants</strong>, and <strong className="text-slate-900 font-bold">Invisalign Clear Aligners</strong> with flexible installment payment plans.
             </p>
 
             {/* Helpline and Location CTA Links */}
@@ -145,9 +145,9 @@ _Sent via Siva Tooth Care Website_`;
 
               <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-300 hover:shadow-md transition-all text-center lg:text-left">
                 <div className="text-amber-700 font-bold text-xs sm:text-sm flex items-center justify-center lg:justify-start gap-1">
-                  <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-600 shrink-0" /> 0% EMI
+                  <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-amber-600 shrink-0" /> Installments
                 </div>
-                <div className="text-[11px] sm:text-xs text-amber-600 font-bold mt-0.5">Instant Approval</div>
+                <div className="text-[11px] sm:text-xs text-amber-600 font-bold mt-0.5">Easy Stages</div>
               </div>
             </div>
 

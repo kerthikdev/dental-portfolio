@@ -18,7 +18,7 @@ export default function FAQSection() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
           <p className="text-slate-600 text-xs sm:text-base leading-relaxed">
-            Everything you need to know about our treatments, 3D digital scans, and flexible 0% interest EMI options in Salem at Siva Tooth Care.
+            Everything you need to know about our treatments, diagnosis, and flexible installment payment options in Salem at Siva Tooth Care.
           </p>
         </div>
 

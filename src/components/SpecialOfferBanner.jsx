@@ -31,7 +31,7 @@ export default function SpecialOfferBanner({ onOpenBooking }) {
             </h2>
 
             <p className="text-sky-100 text-xs sm:text-base leading-relaxed">
-              Book your private consultation with <strong className="text-white font-bold">Dr. Kiran Kumar (BDS)</strong> at Siva Tooth Care, Karuppur. Get expert diagnosis for RCT, wisdom tooth pain, dental implants, or smile alignment with flexible 0% interest EMI options.
+              Book your private consultation with <strong className="text-white font-bold">Dr. Kiran Kumar (BDS)</strong> at Siva Tooth Care, Karuppur. Get expert diagnosis for RCT, wisdom tooth pain, dental implants, or smile alignment with flexible installment payment options.
             </p>
 
             {/* Micro Highlights */}
@@ -45,7 +45,7 @@ export default function SpecialOfferBanner({ onOpenBooking }) {
               </span>
               <span className="text-sky-300/60 hidden sm:inline">•</span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> 0% Interest EMI Available
+                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> Flexible Installment Options
               </span>
             </div>
 

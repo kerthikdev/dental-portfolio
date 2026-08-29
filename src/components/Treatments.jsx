@@ -41,7 +41,7 @@ export default function Treatments({ onOpenBooking }) {
               </button>
 
               <div className="text-center text-[10px] sm:text-[11px] text-slate-500 font-semibold">
-                Direct WhatsApp Confirmation • Zero Waiting • 0% EMI
+                Direct WhatsApp Confirmation • Zero Waiting • Easy Installments
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Treatments({ onOpenBooking }) {
                     href={treatment.id === 'invisalign' ? '#aligner-quiz' : '#emi-calculator'}
                     className="w-full sm:w-auto px-4 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold border border-slate-200 transition-all text-center"
                   >
-                    {treatment.id === 'invisalign' ? 'Aligner Suitability Quiz' : '0% EMI Calculator'}
+                    {treatment.id === 'invisalign' ? 'Aligner Suitability Quiz' : 'Installment Plan'}
                   </a>
                 </div>
               </div>

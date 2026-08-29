@@ -10,7 +10,7 @@ export default function Navbar({ onOpenBooking }) {
     { name: "Invisalign", href: "#invisalign" },
     { name: "AI Reels", href: "#reels" },
     { name: "Aligner Quiz", href: "#aligner-quiz" },
-    { name: "0% EMI", href: "#emi-calculator" },
+    { name: "Installments", href: "#emi-calculator" },
     { name: "Doctors", href: "#doctors" },
     { name: "Technology", href: "#technology" },
     { name: "Reviews", href: "#reviews" },
