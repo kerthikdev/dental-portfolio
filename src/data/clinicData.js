@@ -153,6 +153,19 @@ export const allTreatments = [
 
 export const aiMockReels = [
   {
+    id: "reel-rct",
+    title: "Painless Root Canal Treatment (RCT) Specialist Procedure",
+    tag: "RCT Specialist Care",
+    category: "Endodontics",
+    videoUrl: "/videos/rct-procedure.mp4",
+    caption: "Step-by-step specialist root canal procedure clearing infection, restoring tooth vitality, and relieving toothache in a single visit with Dr. Kiran Kumar (BDS).",
+    doctor: "Dr. Kiran Kumar (BDS)",
+    views: "48.6K",
+    likes: "3.9K",
+    badge: "RCT SPECIALIST DEMO",
+    thumbnail: "https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=600&auto=format&fit=crop"
+  },
+  {
     id: "reel-1",
     title: "AI 3D Digital Smile Scan & Simulation",
     tag: "3D Digital Scan",
@@ -190,19 +203,6 @@ export const aiMockReels = [
     likes: "1.6K",
     badge: "3D IMPLANT REEL",
     thumbnail: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop"
-  },
-  {
-    id: "reel-4",
-    title: "Professional Smile Whitening & Aesthetic Designing",
-    tag: "Smile Makeover",
-    category: "Aesthetic Dentistry",
-    videoUrl: "https://player.vimeo.com/external/406087786.sd.mp4?s=1d32ba53a812df93f0b2f5bca9be36e1b6f6f966&profile_id=164&oauth2_token_id=57447761",
-    caption: "Instant shade lightening and cosmetic smile alignment completed in a single comfortable visit.",
-    doctor: "Dr. Kiran Kumar (BDS)",
-    views: "45.2K",
-    likes: "3.8K",
-    badge: "AESTHETIC SMILE",
-    thumbnail: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600&auto=format&fit=crop"
   }
 ];
 
