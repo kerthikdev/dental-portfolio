@@ -34,14 +34,14 @@ export default function Treatments({ onOpenBooking }) {
 
             <div className="lg:col-span-4 flex flex-col justify-center gap-2.5 sm:gap-3">
               <button
-                onClick={() => onOpenBooking({ title: "Complimentary 3D Intraoral Scan" })}
+                onClick={() => onOpenBooking({ title: "Clinical Consultation Booking" })}
                 className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-sm shadow-lg shadow-sky-600/20 transition-all text-center active:scale-[0.99]"
               >
-                Claim Free 3D Scan
+                Book an Appointment
               </button>
 
               <div className="text-center text-[10px] sm:text-[11px] text-slate-500 font-semibold">
-                100% Free Offer • Zero Obligation • Instant 0% EMI
+                Direct WhatsApp Confirmation • Zero Waiting • 0% EMI
               </div>
             </div>
           </div>

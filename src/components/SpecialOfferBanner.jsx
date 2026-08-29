@@ -16,8 +16,8 @@ export default function SpecialOfferBanner({ onOpenBooking }) {
           <div className="relative max-w-3xl mx-auto space-y-3.5 sm:space-y-4">
             <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-white/20 border border-white/30 text-white text-[10px] sm:text-xs font-extrabold uppercase tracking-wider shadow-sm backdrop-blur-md">
-                <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-200 shrink-0" />
-                <span>FREE CONSULTATION + 3D DIGITAL SCAN</span>
+                <Calendar className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-200 shrink-0" />
+                <span>BOOK APPOINTMENT • SIVA TOOTH CARE</span>
               </span>
               <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-purple-500/30 border border-purple-300/40 text-purple-100 text-[10px] sm:text-xs font-bold shadow-sm backdrop-blur-md">
                 <Heart className="w-3 sm:w-3.5 h-3 sm:h-3.5 fill-purple-300 text-purple-300 shrink-0" />
@@ -27,21 +27,21 @@ export default function SpecialOfferBanner({ onOpenBooking }) {
 
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white leading-tight">
               Ready to Take the Next Step <br className="hidden sm:inline" />
-              Toward Your Perfect Smile?
+              Toward Your Healthy Smile?
             </h2>
 
             <p className="text-sky-100 text-xs sm:text-base leading-relaxed">
-              Book your free private consultation with <strong className="text-white font-bold">Dr. Kiran Kumar</strong> at Siva Tooth Care, Karuppur. Receive your complimentary 3D digital smile scan and explore flexible 0% interest EMI options.
+              Book your private consultation with <strong className="text-white font-bold">Dr. Kiran Kumar (BDS)</strong> at Siva Tooth Care, Karuppur. Get expert diagnosis for RCT, wisdom tooth pain, dental implants, or smile alignment with flexible 0% interest EMI options.
             </p>
 
             {/* Micro Highlights */}
             <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-6 pt-2 text-[11px] sm:text-xs text-sky-100 font-bold">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> Complimentary 3D Scan
+                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> 10+ Years Experienced Surgeon
               </span>
               <span className="text-sky-300/60 hidden sm:inline">•</span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> Free Specialist Consultation
+                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-sky-300 shrink-0" /> Specialist in RCT & Implants
               </span>
               <span className="text-sky-300/60 hidden sm:inline">•</span>
               <span className="flex items-center gap-1.5">
@@ -52,11 +52,11 @@ export default function SpecialOfferBanner({ onOpenBooking }) {
             {/* Buttons */}
             <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
               <button
-                onClick={() => onOpenBooking({ title: "Special Offer Free Scan & Consult" })}
+                onClick={() => onOpenBooking({ title: "Appointment Booking" })}
                 className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-900 font-extrabold text-xs sm:text-sm shadow-xl transition-all flex items-center justify-center gap-2 active:scale-[0.99]"
               >
-                <Sparkles className="w-4 h-4 text-sky-600 shrink-0" />
-                <span>Claim Free Scan & Consult</span>
+                <Calendar className="w-4 h-4 text-sky-600 shrink-0" />
+                <span>Book an Appointment</span>
                 <ArrowRight className="w-4 h-4 text-slate-900 shrink-0" />
               </button>
 

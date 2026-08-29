@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, Sparkles, Calendar } from 'lucide-react';
+import { Phone, MessageCircle, Calendar } from 'lucide-react';
 import { clinicInfo } from '../data/clinicData';
 
 export default function FloatingActions({ onOpenBooking }) {
@@ -10,7 +10,7 @@ export default function FloatingActions({ onOpenBooking }) {
         
         {/* WhatsApp Button */}
         <a
-          href={`https://wa.me/${clinicInfo.whatsappNumber}?text=Hi%20Siva%20Tooth%20Care%20Karuppur,%20I%20would%20like%20to%20inquire%20about%20a%20Free%203D%20Digital%20Scan%20and%20Consultation.`}
+          href={`https://wa.me/${clinicInfo.whatsappNumber}?text=Hi%20Dr.%20Kiran%20Kumar%20/%20Siva%20Tooth%20Care,%20I%20would%20like%20to%20book%20a%20dental%20appointment.`}
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-2xl shadow-emerald-600/30 hover:scale-105 transition-all duration-300 border border-emerald-400/40"
@@ -18,17 +18,17 @@ export default function FloatingActions({ onOpenBooking }) {
         >
           <MessageCircle className="w-5 h-5 fill-white text-emerald-600" />
           <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300">
-            WhatsApp Desk
+            WhatsApp Doctor
           </span>
         </a>
 
-        {/* Primary CTA: Book Free 3D Scan */}
+        {/* Primary CTA: Book Appointment */}
         <button
-          onClick={() => onOpenBooking({ title: "Free 3D Scan & Specialist Consultation" })}
+          onClick={() => onOpenBooking({ title: "Appointment Booking" })}
           className="flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-extrabold text-xs tracking-wide shadow-2xl shadow-sky-600/40 hover:scale-105 transition-all duration-300 border border-sky-400/40 uppercase"
         >
-          <Sparkles className="w-4 h-4 text-sky-200 animate-pulse" />
-          <span>Claim Free 3D Scan</span>
+          <Calendar className="w-4 h-4 text-sky-200" />
+          <span>Book Appointment</span>
         </button>
       </div>
 
@@ -43,7 +43,7 @@ export default function FloatingActions({ onOpenBooking }) {
         </a>
 
         <a
-          href={`https://wa.me/${clinicInfo.whatsappNumber}?text=Hi%20Siva%20Tooth%20Care,%20I%20want%20to%20book%20a%20Free%203D%20Scan%20Consultation.`}
+          href={`https://wa.me/${clinicInfo.whatsappNumber}?text=Hi%20Dr.%20Kiran%20Kumar%20/%20Siva%20Tooth%20Care,%20I%20would%20like%20to%20book%20an%20appointment.`}
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center border border-emerald-400/40 active:scale-95 transition-transform shrink-0 shadow-md"
@@ -53,11 +53,11 @@ export default function FloatingActions({ onOpenBooking }) {
         </a>
 
         <button
-          onClick={() => onOpenBooking({ title: "Free 3D Scan & Consultation" })}
+          onClick={() => onOpenBooking({ title: "Appointment Booking" })}
           className="flex-1 py-2.5 px-2 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md shadow-sky-600/30 active:scale-95 transition-transform"
         >
-          <Sparkles className="w-3.5 h-3.5 shrink-0" />
-          <span className="truncate">Book Free Scan</span>
+          <Calendar className="w-3.5 h-3.5 shrink-0" />
+          <span className="truncate">Book Appointment</span>
         </button>
       </div>
     </>

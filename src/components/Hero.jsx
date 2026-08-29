@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Calendar, MapPin, Sparkles, CheckCircle2, ShieldCheck, Video, UserCheck, ArrowRight, Clock, Award, Star, Heart } from 'lucide-react';
+import { Phone, Calendar, MapPin, Sparkles, CheckCircle2, ShieldCheck, Video, UserCheck, ArrowRight, Clock, Award, Star, Heart, MessageSquare } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { clinicInfo } from '../data/clinicData';
 
@@ -8,18 +8,48 @@ export default function Hero({ onOpenBooking }) {
     fullName: '',
     phone: '',
     email: '',
-    consultMode: 'in-clinic',
-    treatment: 'Free 3D Scan & Specialist Consultation'
+    chiefComplaint: '',
+    consultMode: 'in-clinic'
   });
 
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+
+  const complaintsList = [
+    "Severe Tooth Pain / RCT",
+    "Wisdom Tooth Removal",
+    "Dental Implants",
+    "Invisalign / Clear Aligners",
+    "Teeth Cleaning / Whitening",
+    "General Checkup"
+  ];
+
+  const getWhatsAppUrl = () => {
+    const modeText = formData.consultMode === 'in-clinic' ? 'In-Clinic Visit (Karuppur)' : 'Online Video Call';
+    const message = 
+`*New Dental Appointment Request*
+---------------------------------------
+👤 *Patient Name:* ${formData.fullName}
+📱 *Phone Number:* ${formData.phone}
+${formData.email ? `📧 *Email:* ${formData.email}\n` : ''}🦷 *Chief Complaint:* ${formData.chiefComplaint || 'General Dental Consultation / RCT'}
+📍 *Clinic:* Siva Tooth Care, Karuppur, Salem
+🗓 *Preferred Mode:* ${modeText}
+---------------------------------------
+_Sent via Siva Tooth Care Website_`;
+
+    return `https://wa.me/${clinicInfo.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.fullName || !formData.phone) return;
 
     setSubmitting(true);
+    
+    // Open WhatsApp directly
+    const whatsappUrl = getWhatsAppUrl();
+    window.open(whatsappUrl, '_blank');
+
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
@@ -28,7 +58,7 @@ export default function Hero({ onOpenBooking }) {
         spread: 70,
         origin: { y: 0.6 }
       });
-    }, 600);
+    }, 400);
   };
 
   return (
@@ -51,7 +81,7 @@ export default function Hero({ onOpenBooking }) {
 
               <span className="px-3 py-1.5 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-[11px] sm:text-xs font-bold flex items-center gap-1.5 shadow-sm">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                <span>FREE 3D SCAN & CONSULTATION</span>
+                <span>BOOK AN APPOINTMENT</span>
               </span>
 
               <span className="px-2.5 py-1.5 rounded-full bg-purple-100 border border-purple-300 text-purple-800 text-[11px] sm:text-xs font-bold flex items-center gap-1.5 shadow-sm">
@@ -68,7 +98,7 @@ export default function Hero({ onOpenBooking }) {
 
             {/* Subtitle Description */}
             <p className="text-sm sm:text-base lg:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Advanced dental care for confident, healthy smiles at <strong className="text-slate-900 font-bold">Siva Tooth Care</strong> (Karuppur, Salem) — with specialist-led treatment in <strong className="text-slate-900 font-bold">Full Mouth Dental Implants</strong> and <strong className="text-slate-900 font-bold">Invisalign Clear Aligners</strong> with easy 0% Interest EMI plans.
+              Advanced dental care for confident, healthy smiles at <strong className="text-slate-900 font-bold">Siva Tooth Care</strong> (Karuppur, Salem) — with specialist-led treatment in <strong className="text-slate-900 font-bold">Root Canal Treatment (RCT)</strong>, <strong className="text-slate-900 font-bold">Dental Implants</strong>, and <strong className="text-slate-900 font-bold">Invisalign Clear Aligners</strong> with easy 0% Interest EMI plans.
             </p>
 
             {/* Helpline and Location CTA Links */}
@@ -101,16 +131,16 @@ export default function Hero({ onOpenBooking }) {
 
               <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200 shadow-sm hover:border-emerald-300 hover:shadow-md transition-all text-center lg:text-left">
                 <div className="text-emerald-700 font-bold text-xs sm:text-sm flex items-center justify-center lg:justify-start gap-1">
-                  <Sparkles className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-600 shrink-0" /> 3D Digital Scan
+                  <Calendar className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-600 shrink-0" /> Quick Booking
                 </div>
-                <div className="text-[11px] sm:text-xs text-emerald-600 font-bold mt-0.5">100% FREE</div>
+                <div className="text-[11px] sm:text-xs text-emerald-600 font-bold mt-0.5">WhatsApp Direct</div>
               </div>
 
               <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-md transition-all text-center lg:text-left">
                 <div className="text-blue-700 font-bold text-xs sm:text-sm flex items-center justify-center lg:justify-start gap-1">
-                  <Award className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-blue-600 shrink-0" /> Specialists
+                  <Award className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-blue-600 shrink-0" /> RCT Specialist
                 </div>
-                <div className="text-[11px] sm:text-xs text-slate-500 mt-0.5 font-medium">MDS Led Care</div>
+                <div className="text-[11px] sm:text-xs text-slate-500 mt-0.5 font-medium">10+ Yrs • BDS</div>
               </div>
 
               <div className="bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200 shadow-sm hover:border-amber-300 hover:shadow-md transition-all text-center lg:text-left">
@@ -133,7 +163,7 @@ export default function Hero({ onOpenBooking }) {
                 <span className="text-slate-500 font-normal hidden sm:inline">(Verified Google Rating)</span>
               </div>
               <span className="hidden sm:inline text-slate-300">•</span>
-              <span className="text-slate-700 font-medium">15+ Years Clinical Leadership</span>
+              <span className="text-slate-700 font-medium">10+ Years Clinical Leadership</span>
               <span className="hidden sm:inline text-slate-300">•</span>
               <span className="text-slate-700 font-medium">Karuppur, Salem</span>
             </div>
@@ -152,17 +182,17 @@ export default function Hero({ onOpenBooking }) {
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-sky-700 bg-sky-100 border border-sky-200 px-2.5 py-0.5 rounded-full">
-                        PRIORITY CONSULTATION
+                        PRIORITY BOOKING
                       </span>
-                      <span className="text-[10px] sm:text-[11px] font-bold text-amber-700 bg-amber-100 border border-amber-200 px-2.5 py-0.5 rounded-full">
-                        0% EMI
+                      <span className="text-[10px] sm:text-[11px] font-bold text-emerald-700 bg-emerald-100 border border-emerald-200 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                        <MessageSquare className="w-3 h-3" /> WhatsApp Direct
                       </span>
                     </div>
                     <h3 className="text-lg sm:text-xl font-display font-extrabold text-slate-900 mt-2">
-                      Book Free Consultation
+                      Book an Appointment
                     </h3>
                     <p className="text-xs text-slate-500 mt-0.5 font-medium leading-relaxed">
-                      Includes complimentary 3D intraoral digital scan & MDS smile evaluation.
+                      Connect directly with Dr. Kiran Kumar & clinical team in Karuppur.
                     </p>
                   </div>
                 </div>
@@ -172,31 +202,33 @@ export default function Hero({ onOpenBooking }) {
                     <div className="w-14 h-14 sm:w-16 sm:h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto border border-emerald-300 animate-bounce">
                       <CheckCircle2 className="w-7 h-7 sm:w-8 sm:h-8" />
                     </div>
-                    <h4 className="text-lg sm:text-xl font-extrabold text-slate-900">Consultation Request Confirmed!</h4>
+                    <h4 className="text-lg sm:text-xl font-extrabold text-slate-900">Appointment Request Sent!</h4>
                     <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">
-                      Thank you, <strong className="text-sky-700">{formData.fullName}</strong>. Our clinical coordinator from Siva Tooth Care Karuppur will call you back on <strong className="text-slate-900">{formData.phone}</strong> within 15 minutes to confirm your priority time slot.
+                      Thank you, <strong className="text-sky-700">{formData.fullName}</strong>. Your details and chief complaint have been sent to Dr. Kiran Kumar's clinic desk.
                     </p>
                     
                     <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-200 text-left text-xs space-y-1.5 text-slate-700">
-                      <div><span className="text-slate-500">Mode:</span> {formData.consultMode === 'in-clinic' ? 'In-Clinic Visit with Free 3D Scan' : 'Online Video Live Call'}</div>
+                      <div><span className="text-slate-500">Chief Complaint:</span> <strong className="text-slate-900">{formData.chiefComplaint || 'General Dental Consultation'}</strong></div>
+                      <div><span className="text-slate-500">Phone:</span> {formData.phone}</div>
+                      <div><span className="text-slate-500">Mode:</span> {formData.consultMode === 'in-clinic' ? 'In-Clinic Visit' : 'Online Video Call'}</div>
                       <div><span className="text-slate-500">Location:</span> Siva tooth care, New Muruga complex, Thattanchavadi, Karuppur</div>
-                      <div><span className="text-slate-500">Perks:</span> Free 3D Digital Scan + 0% Interest EMI Eligibility</div>
                     </div>
 
                     <div className="pt-2 flex flex-col gap-2">
                       <a
-                        href={`https://wa.me/${clinicInfo.whatsappNumber}?text=Hi%20Siva%20Tooth%20Care,%20I%20just%20booked%20a%20Free%203D%20Scan%20consultation%20for%20${encodeURIComponent(formData.fullName)}.`}
+                        href={getWhatsAppUrl()}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 transition-all"
                       >
-                        <span>Chat Instantly on WhatsApp</span>
+                        <MessageSquare className="w-4 h-4 shrink-0" />
+                        <span>Open Chat on WhatsApp</span>
                       </a>
                       <button
                         onClick={() => setSubmitted(false)}
                         className="text-xs text-slate-500 hover:text-sky-600 font-semibold underline pt-1"
                       >
-                        Submit another booking request
+                        Book another appointment
                       </button>
                     </div>
                   </div>
@@ -220,7 +252,7 @@ export default function Hero({ onOpenBooking }) {
                           <MapPin className={`w-4 h-4 mt-0.5 shrink-0 ${formData.consultMode === 'in-clinic' ? 'text-sky-600' : 'text-slate-400'}`} />
                           <div className="min-w-0">
                             <div className="font-bold">In-Clinic Visit</div>
-                            <div className="text-[10px] text-sky-600 font-semibold truncate">Karuppur Clinic + 3D Scan</div>
+                            <div className="text-[10px] text-sky-600 font-semibold truncate">Karuppur Clinic</div>
                           </div>
                         </button>
 
@@ -240,17 +272,6 @@ export default function Hero({ onOpenBooking }) {
                           </div>
                         </button>
                       </div>
-                    </div>
-
-                    {/* Clinic Location Badge */}
-                    <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs">
-                      <div className="font-bold text-slate-800 flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
-                        <span className="truncate">Siva Tooth Care — Karuppur</span>
-                      </div>
-                      <p className="text-[11px] text-slate-500 mt-0.5 font-medium truncate">
-                        New Muruga Complex, Thattanchavadi
-                      </p>
                     </div>
 
                     {/* Patient Name */}
@@ -277,7 +298,7 @@ export default function Hero({ onOpenBooking }) {
                         <input
                           type="tel"
                           required
-                          placeholder="e.g. 079040 91317"
+                          placeholder="e.g. 79040 91317"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-base sm:text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:bg-white font-medium"
@@ -297,17 +318,50 @@ export default function Hero({ onOpenBooking }) {
                       </div>
                     </div>
 
+                    {/* Chief Complaint / Dental Problem */}
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-1">
+                        Chief Complaint / Dental Problem *
+                      </label>
+                      <input
+                        type="text"
+                        required
+                        placeholder="e.g. Severe tooth pain / Root canal / Missing teeth"
+                        value={formData.chiefComplaint}
+                        onChange={(e) => setFormData({ ...formData, chiefComplaint: e.target.value })}
+                        className="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-base sm:text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:bg-white font-medium"
+                      />
+                      {/* Quick Chips */}
+                      <div className="flex flex-wrap gap-1.5 mt-2">
+                        {complaintsList.map((item) => (
+                          <button
+                            key={item}
+                            type="button"
+                            onClick={() => setFormData({ ...formData, chiefComplaint: item })}
+                            className={`text-[10px] px-2.5 py-1 rounded-lg border font-medium transition-all ${
+                              formData.chiefComplaint === item
+                                ? 'bg-sky-600 text-white border-sky-600 font-bold'
+                                : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100'
+                            }`}
+                          >
+                            {item}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
                     {/* Submit Button */}
                     <button
                       type="submit"
                       disabled={submitting}
-                      className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-extrabold text-sm shadow-xl shadow-sky-600/25 transition-all flex items-center justify-center gap-2 group disabled:opacity-75 active:scale-[0.99]"
+                      className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-sky-600 hover:from-emerald-500 hover:to-sky-500 text-white font-extrabold text-sm shadow-xl shadow-emerald-600/25 transition-all flex items-center justify-center gap-2 group disabled:opacity-75 active:scale-[0.99]"
                     >
+                      <MessageSquare className="w-4 h-4 shrink-0" />
                       {submitting ? (
-                        <span>Reserving Priority Slot...</span>
+                        <span>Connecting to Doctor WhatsApp...</span>
                       ) : (
                         <>
-                          <span>Request Free Consultation</span>
+                          <span>Book Appointment via WhatsApp</span>
                           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </>
                       )}
@@ -315,8 +369,8 @@ export default function Hero({ onOpenBooking }) {
 
                     {/* Confidential Notice */}
                     <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-500 text-center pt-1 font-medium">
-                      <Clock className="w-3.5 h-3.5 text-sky-600 shrink-0" />
-                      <span>100% Confidential • Our doctors call back in 15 mins</span>
+                      <Clock className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                      <span>Direct WhatsApp to Dr. Kiran Kumar's clinic desk ({clinicInfo.phoneFormatted})</span>
                     </div>
                   </form>
                 )}

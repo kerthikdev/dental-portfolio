@@ -233,25 +233,25 @@ export default function AlignerQuiz({ onOpenBooking }) {
 
                     <div className="p-3 bg-white rounded-xl border border-sky-100">
                       <span className="text-slate-500 block text-[11px] font-medium">Supervising Specialist:</span>
-                      <strong className="text-sky-700">Dr. Kiran Kumar (BDS, MDS)</strong>
+                      <strong className="text-sky-700">Dr. Kiran Kumar (BDS)</strong>
                     </div>
                   </div>
 
                   <p className="text-xs text-slate-700 leading-relaxed bg-white p-3.5 rounded-xl border border-sky-200 font-medium">
-                    💡 <strong>Clinical Assessment Note:</strong> {selectedConcern.note}. At Siva Tooth Care, under the direct supervision of Dr. Kiran Kumar BDS., MDS, your 3D digital simulation will showcase exact aligner movements and estimated finish date before you start.
+                    💡 <strong>Clinical Assessment Note:</strong> {selectedConcern.note}. At Siva Tooth Care, under the direct supervision of Dr. Kiran Kumar BDS (10+ Years Experience, Specialist in RCT), your 3D digital simulation will showcase exact aligner movements and estimated finish date before you start.
                   </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-2">
                   <button
                     onClick={() => onOpenBooking({ 
-                      title: `Invisalign 3D Scan (${selectedConcern.score}% Match)`,
+                      title: `Invisalign Consultation (${selectedConcern.score}% Match)`,
                       notes: `Concern: ${selectedConcern.label}, Timeline: ${selectedTimeline.label}`
                     })}
                     className="w-full sm:flex-1 py-3.5 px-6 rounded-xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-sky-600/20 transition-all flex items-center justify-center gap-2 active:scale-[0.99]"
                   >
-                    <Sparkles className="w-4 h-4 shrink-0" />
-                    <span>Claim Free 3D Aligner Scan in Salem</span>
+                    <Calendar className="w-4 h-4 shrink-0" />
+                    <span>Book Invisalign Appointment in Salem</span>
                   </button>
 
                   <button

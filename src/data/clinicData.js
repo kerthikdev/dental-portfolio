@@ -3,7 +3,7 @@ export const clinicInfo = {
   tagline: "Salem's Premier Specialist Dental Clinic for Implants, Wisdom Extractions & Invisalign",
   since: 2015,
   phonePrimary: "+91 79040 91317",
-  phoneFormatted: "079040 91317",
+  phoneFormatted: "79040 91317",
   whatsappNumber: "917904091317",
   rating: "4.8",
   reviewsCount: "5",
@@ -22,7 +22,7 @@ export const clinicInfo = {
       plusCode: "P3HX+W9 Karuppur, Tamil Nadu",
       hoursWeek: "Mon – Sat: 9:30 AM – 8:30 PM",
       hoursSun: "Sunday: 10:00 AM – 1:30 PM",
-      phone: "079040 91317",
+      phone: "79040 91317",
       mapsUrl: "https://maps.google.com/?q=Siva+Tooth+Care+New+Muruga+complex+Thattanchavadi+Karuppur+Salem+636012",
       embedMapQuery: "New+Muruga+complex+Thattanchavadi+Karuppur+Tamil+Nadu+636012"
     }
@@ -33,23 +33,24 @@ export const doctorsData = [
   {
     id: "dr-kirankumar",
     name: "Dr. Kiran Kumar",
-    role: "Chief Dental Surgeon & Specialist",
-    degrees: "B.D.S., M.D.S.",
-    experience: "10+ Years Clinical Excellence",
-    badge: "Lead Dental Surgeon & Consultant",
+    role: "Chief Dental Surgeon & Specialist in RCT",
+    degrees: "B.D.S.",
+    experience: "10+ Years Clinical Experience",
+    badge: "Specialist in RCT & Dental Surgeon",
     avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop",
-    bio: "Dr. Kiran Kumar is the Chief Dental Surgeon at Siva Tooth Care in Karuppur, Salem. Renowned for his gentle, transparent, and patient-first approach, Dr. Kiran Kumar specializes in painless wisdom tooth removals, dental implants, single-sitting root canals, and modern cosmetic dentistry. He takes the time to explain every procedure step-by-step to ensure complete comfort and peace of mind.",
+    bio: "Dr. Kiran Kumar (B.D.S.) has over 10+ years of clinical experience as the Chief Dental Surgeon at Siva Tooth Care in Karuppur, Salem. Renowned for his gentle, transparent, and patient-first approach, Dr. Kiran Kumar is a specialist in painless Root Canal Treatment (RCT), gentle wisdom tooth extractions, dental implants, and modern restorative dentistry. He takes the time to explain every procedure step-by-step to ensure complete comfort and peace of mind.",
     focusAreas: [
+      "Specialist in Painless Root Canal Treatment (RCT)",
       "Painless Wisdom Tooth Extractions",
-      "Full Mouth Dental Implants & Fixed Teeth",
-      "Single-Sitting Hi-Tech Root Canal Treatment",
-      "Invisalign & Clear Aligner Therapy",
-      "Laser Cosmetic Dentistry & Aesthetic Smile Designing"
+      "Full Mouth & Single Dental Implants",
+      "HD Digital X-Ray Diagnostics & Rotary Endodontics",
+      "Invisalign & Cosmetic Smile Restoration"
     ],
     accreditations: [
+      "10+ Years of Proven Clinical Excellence in Salem",
+      "Specialist in Advanced Rotary RCT & Micro-Endodontics",
       "Member of Indian Dental Association (IDA)",
-      "Certified in Advanced Rotary Endodontics & Implantology",
-      "Over 3,500+ Painless Surgical & Restorative Procedures Completed"
+      "Over 5,000+ Painless RCT, Surgical & Restorative Procedures Completed"
     ]
   }
 ];
@@ -63,7 +64,7 @@ export const flagshipTreatments = [
     shortDesc: "Restore full chewing power, aesthetic facial contours, and permanent confidence with specialist-led 3D computer-guided implant surgery at Siva Tooth Care.",
     features: [
       "Customized All-on-4 & All-on-6 fixed full arch titanium bridges",
-      "3D CBCT bone scan planning for painless keyhole placement",
+      "High-definition digital X-ray diagnostics for painless keyhole placement",
       "Eat crisp apples, solid foods, and snacks without worry",
       "0% Interest EMI options with simple monthly installments",
       "Permanent replacement for loose, uncomfortable dentures"
@@ -110,10 +111,10 @@ export const allTreatments = [
   },
   {
     id: "root-canal",
-    title: "Hi-Tech Painless Root Canal",
+    title: "Specialist Painless Root Canal (RCT)",
     category: "Endodontics",
-    description: "Single-sitting root canal treatment utilizing rotary apex locators and digital imaging to eliminate infection and relieve throbbing pain immediately.",
-    highlights: ["Single-visit completion available", "Computer-calibrated apex precision", "Painless motorized rotary files", "Monitored digital sealing"],
+    description: "Single-sitting root canal treatment by RCT specialist utilizing rotary apex locators and digital X-rays to eliminate infection and relieve throbbing pain immediately.",
+    highlights: ["Specialist RCT precision", "Single-visit completion available", "Painless motorized rotary files", "HD digital X-ray verification"],
     popular: true
   },
   {
@@ -150,7 +151,7 @@ export const aiMockReels = [
     category: "Digital Dentistry",
     videoUrl: "https://player.vimeo.com/external/517090025.sd.mp4?s=9e1bcfa7b329388ffc77bb32a688b5ec2d35817c&profile_id=164&oauth2_token_id=57447761",
     caption: "AI-assisted 3D intraoral optical scanning at Siva Tooth Care. Captures 6,000 frames/sec for hyper-precise smile simulations.",
-    doctor: "Dr. Kiran Kumar",
+    doctor: "Dr. Kiran Kumar (BDS)",
     views: "28.4K",
     likes: "1.9K",
     badge: "AI 3D SCANNER",
@@ -163,7 +164,7 @@ export const aiMockReels = [
     category: "Oral Surgery",
     videoUrl: "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd270d308573f62e6ec879cbab6743&profile_id=164&oauth2_token_id=57447761",
     caption: "Dr. Kiran Kumar demonstrating step-by-step painless wisdom tooth removal with minimal trauma and rapid healing.",
-    doctor: "Dr. Kiran Kumar",
+    doctor: "Dr. Kiran Kumar (BDS)",
     views: "34.1K",
     likes: "2.4K",
     badge: "PAINLESS SURGERY",
@@ -176,7 +177,7 @@ export const aiMockReels = [
     category: "Full Arch Implants",
     videoUrl: "https://player.vimeo.com/external/494951478.sd.mp4?s=d001e7498cbe066d7adbc46497ef05a109a96e8e&profile_id=164&oauth2_token_id=57447761",
     caption: "3D computer-guided keyhole implant surgery for fixed permanent teeth rehabilitation at Karuppur clinic.",
-    doctor: "Dr. Kiran Kumar",
+    doctor: "Dr. Kiran Kumar (BDS)",
     views: "22.8K",
     likes: "1.6K",
     badge: "3D IMPLANT REEL",
@@ -189,7 +190,7 @@ export const aiMockReels = [
     category: "Aesthetic Dentistry",
     videoUrl: "https://player.vimeo.com/external/406087786.sd.mp4?s=1d32ba53a812df93f0b2f5bca9be36e1b6f6f966&profile_id=164&oauth2_token_id=57447761",
     caption: "Instant shade lightening and cosmetic smile alignment completed in a single comfortable visit.",
-    doctor: "Dr. Kiran Kumar",
+    doctor: "Dr. Kiran Kumar (BDS)",
     views: "45.2K",
     likes: "3.8K",
     badge: "AESTHETIC LASER",
@@ -207,9 +208,9 @@ export const advantagesData = [
   },
   {
     number: "02",
-    title: "Dr. Kiran Kumar (MDS Led)",
-    subtitle: "Gentle & Kind Specialist",
-    desc: "Detailed step-by-step explanations, patient comfort first, and friendly post-treatment support.",
+    title: "Dr. Kiran Kumar (BDS)",
+    subtitle: "Specialist in RCT & Gentle Care",
+    desc: "10+ years experience, specialist in painless root canal treatments (RCT), detailed step-by-step explanations, and patient comfort first.",
     icon: "GraduationCap"
   },
   {
@@ -222,8 +223,8 @@ export const advantagesData = [
   {
     number: "04",
     title: "High-Tech Digital Precision",
-    subtitle: "3D Scans & Rotary Apex",
-    desc: "Digital smile simulators, painless rotary endodontics, and sub-millimeter surgical precision for zero guesswork.",
+    subtitle: "Digital X-Ray & 3D Scans",
+    desc: "Digital smile simulators, high-definition digital X-rays (RVG), and painless rotary endodontics for zero guesswork.",
     icon: "Cpu"
   },
   {
@@ -252,11 +253,11 @@ export const technologyData = [
     image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=600&auto=format&fit=crop"
   },
   {
-    title: "3D CBCT Bone Planning",
-    subtitle: "Sub-Millimeter Surgical Precision",
-    description: "Provides exact 3D anatomical views of bone density, nerve paths, and sinus cavities for safe, computer-guided keyhole implant placement.",
-    badge: "PRECISION STANDARD • ACTIVE IN CLINIC",
-    benefit: "Zero guesswork; ensures maximum safety and surgical accuracy.",
+    title: "High-Definition Digital X-Ray (RVG)",
+    subtitle: "Instant Low-Radiation Imaging",
+    description: "Advanced digital sensor radiography providing instant, ultra-high-resolution views of root canals, bone structure, and tooth decay with 90% less radiation.",
+    badge: "DIGITAL DIAGNOSTICS • ACTIVE IN CLINIC",
+    benefit: "Immediate digital diagnosis on screen with zero waiting time and minimal radiation.",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600&auto=format&fit=crop"
   },
   {
@@ -269,10 +270,10 @@ export const technologyData = [
   },
   {
     title: "Rotary Endodontic Apex Locators",
-    subtitle: "Single-Visit Root Canals",
-    description: "Computer-calibrated electronic apex locators clear canal infections with pinpoint micro-accuracy and zero pain.",
+    subtitle: "Single-Visit Root Canals (RCT)",
+    description: "Computer-calibrated electronic apex locators clear canal infections with pinpoint micro-accuracy and zero pain for RCT specialists.",
     badge: "PRECISION STANDARD • ACTIVE IN CLINIC",
-    benefit: "Saves natural teeth in one comfortable sitting.",
+    benefit: "Saves natural teeth in one comfortable sitting with specialist RCT precision.",
     image: "https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=600&auto=format&fit=crop"
   },
   {

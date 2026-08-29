@@ -33,7 +33,7 @@ export default function Footer({ onOpenBooking }) {
             </div>
 
             <p className="text-slate-300 leading-relaxed text-xs">
-              Salem's premier center for advanced dental implantology, painless wisdom tooth removal, Invisalign clear aligners, and aesthetic smile rehabilitation. Led by <strong className="text-white">Dr. Kiran Kumar BDS., MDS</strong>.
+              Salem's premier center for specialist root canal therapy (RCT), advanced dental implantology, painless wisdom tooth removal, and clear aligners. Led by <strong className="text-white">Dr. Kiran Kumar BDS (10+ Years Experience, Specialist in RCT)</strong>.
             </p>
 
             <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
@@ -41,7 +41,7 @@ export default function Footer({ onOpenBooking }) {
                 <ShieldCheck className="w-3 h-3 text-emerald-400 shrink-0" /> Hospital Grade Sterilization
               </span>
               <span className="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-[10px] font-semibold flex items-center gap-1">
-                <Award className="w-3 h-3 text-sky-400 shrink-0" /> MDS Specialists
+                <Award className="w-3 h-3 text-sky-400 shrink-0" /> RCT Specialist
               </span>
               <span className="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300 text-[10px] font-semibold flex items-center gap-1">
                 <Star className="w-3 h-3 text-amber-400 fill-amber-400 shrink-0" /> 4.8 Google Rating
@@ -66,6 +66,11 @@ export default function Footer({ onOpenBooking }) {
             <ul className="space-y-2">
               <li>
                 <a href="#treatments" className="hover:text-sky-300 transition-colors block py-0.5">
+                  Specialist Root Canal Treatment (RCT)
+                </a>
+              </li>
+              <li>
+                <a href="#treatments" className="hover:text-sky-300 transition-colors block py-0.5">
                   Full Mouth Dental Implants (All-on-4/6)
                 </a>
               </li>
@@ -81,17 +86,12 @@ export default function Footer({ onOpenBooking }) {
               </li>
               <li>
                 <a href="#treatments" className="hover:text-sky-300 transition-colors block py-0.5">
-                  Hi-Tech Root Canal Treatment
-                </a>
-              </li>
-              <li>
-                <a href="#treatments" className="hover:text-sky-300 transition-colors block py-0.5">
                   Diode Laser Cosmetic Dentistry
                 </a>
               </li>
               <li>
                 <a href="#technology" className="hover:text-sky-300 transition-colors block py-0.5">
-                  3D CBCT Bone Planning & DSD
+                  HD Digital X-Ray & Smile Design
                 </a>
               </li>
             </ul>

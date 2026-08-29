@@ -23,11 +23,11 @@ export default function Navbar({ onOpenBooking }) {
       <div className="bg-slate-950 text-white text-xs border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-9 sm:h-10 flex items-center justify-between gap-2 overflow-hidden">
           
-          {/* Left: Free 3D Scan Pill */}
+          {/* Left: Appointment Pill */}
           <div className="flex items-center gap-2 min-w-0">
-            <span className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-300 font-bold text-[10px] sm:text-[11px] border border-sky-400/30 tracking-wide truncate">
-              <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse shrink-0"></span>
-              <span className="truncate">FREE 3D SCAN & CONSULTATION</span>
+            <span className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-[10px] sm:text-[11px] border border-emerald-400/30 tracking-wide truncate">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+              <span className="truncate">BOOK AN APPOINTMENT</span>
             </span>
             <span className="hidden md:inline text-slate-400 text-xs">
               • Karuppur, Salem
@@ -105,11 +105,11 @@ export default function Navbar({ onOpenBooking }) {
           </a>
           
           <button
-            onClick={() => onOpenBooking({ title: "Free Consultation & 3D Scan" })}
+            onClick={() => onOpenBooking({ title: "Appointment Booking" })}
             className="h-10 sm:h-11 px-4 sm:px-4.5 rounded-xl bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-blue-500 text-white text-xs font-extrabold shadow-md shadow-sky-600/25 hover:shadow-sky-600/35 transition-all duration-300 flex items-center justify-center gap-2"
           >
-            <Sparkles className="w-4 h-4" />
-            <span>Book Free Consultation</span>
+            <Calendar className="w-4 h-4" />
+            <span>Book Appointment</span>
           </button>
         </div>
 
@@ -152,12 +152,12 @@ export default function Navbar({ onOpenBooking }) {
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  onOpenBooking({ title: "Free Consultation & 3D Scan" });
+                  onOpenBooking({ title: "Appointment Booking" });
                 }}
                 className="w-full py-3.5 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 text-white text-sm font-extrabold text-center shadow-lg shadow-sky-600/25 flex items-center justify-center gap-2"
               >
-                <Sparkles className="w-4 h-4" />
-                <span>Book Free Consultation & 3D Scan</span>
+                <Calendar className="w-4 h-4" />
+                <span>Book an Appointment</span>
               </button>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function Doctors({ onOpenBooking }) {
             <span className="text-gradient">Behind the Smiles.</span>
           </h2>
           <p className="text-slate-600 text-xs sm:text-base leading-relaxed">
-            Dedicated MDS specialist with a gentle, patient-first approach to painless, world-class dental care at Siva Tooth Care, Karuppur.
+            Chief Dental Surgeon with 10+ years of clinical experience, specialist in painless Root Canal Treatment (RCT) and gentle dental care at Siva Tooth Care, Karuppur.
           </p>
         </div>
 
