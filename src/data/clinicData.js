@@ -37,7 +37,10 @@ export const doctorsData = [
     degrees: "B.D.S.",
     experience: "10+ Years Clinical Experience",
     badge: "Specialist in RCT & Dental Surgeon",
-    avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop",
+    avatar: "/images/dr-kiran-kumar.png",
+    studioAvatar: "/images/dr-kiran-kumar-studio.jpg",
+    workingImage: "/images/dr-kiran-working.jpg",
+    rawAvatar: "/images/dr-kiran-kumar-raw.jpg",
     bio: "Dr. Kiran Kumar (B.D.S.) has over 10+ years of clinical experience as the Chief Dental Surgeon at Siva Tooth Care in Karuppur, Salem. Renowned for his gentle, transparent, and patient-first approach, Dr. Kiran Kumar is a specialist in painless Root Canal Treatment (RCT), gentle wisdom tooth extractions, dental implants, and modern restorative dentistry. He takes the time to explain every procedure step-by-step to ensure complete comfort and peace of mind.",
     focusAreas: [
       "Specialist in Painless Root Canal Treatment (RCT)",

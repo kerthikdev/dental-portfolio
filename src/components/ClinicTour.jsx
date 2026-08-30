@@ -19,10 +19,10 @@ export default function ClinicTour() {
     },
     {
       title: "Hi-Tech Surgical Operatory",
-      subtitle: "Advanced Treatment Operatory",
-      description: "Hospital-grade ergonomic dental chairs with 6-tier Class-B sterilized instruments and real-time intraoral imaging.",
-      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=800&auto=format&fit=crop",
-      badge: "Hospital-Grade Hygiene"
+      subtitle: "Dr. Kiran Kumar Performing In-Clinic Procedure",
+      description: "Hospital-grade ergonomic operatory with 6-tier Class-B sterilized instruments and live intraoral surgical monitoring.",
+      image: "/images/dr-kiran-working.jpg",
+      badge: "Active Surgical Suite"
     }
   ];
 

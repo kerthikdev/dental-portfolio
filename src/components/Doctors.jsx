@@ -38,11 +38,11 @@ export default function Doctors({ onOpenBooking }) {
               {/* Doctor Header Banner */}
               <div className="p-5 sm:p-8 bg-gradient-to-br from-sky-50 via-slate-50 to-white border-b border-slate-100 flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
                 <div className="relative shrink-0">
-                  <div className="w-24 h-24 sm:w-36 sm:h-36 rounded-3xl overflow-hidden border-2 border-sky-500/40 shadow-md bg-slate-100 shrink-0">
+                  <div className="w-28 h-32 sm:w-36 sm:h-44 rounded-3xl overflow-hidden border-2 border-sky-500/40 shadow-lg bg-gradient-to-b from-sky-100 via-slate-100 to-white shrink-0 flex items-end justify-center">
                     <img
                       src={doc.avatar}
                       alt={doc.name}
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="absolute -bottom-2 -right-2 p-1.5 rounded-xl bg-sky-600 text-white shadow-md">
@@ -57,10 +57,10 @@ export default function Doctors({ onOpenBooking }) {
                     </span>
                     <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-[10px] font-bold flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span>
-                      <span>Karuppur</span>
+                      <span>Karuppur Clinic</span>
                     </span>
                     <span className="px-2.5 py-0.5 rounded-full bg-purple-100 border border-purple-200 text-purple-800 text-[10px] font-bold">
-                      LGBTQ+ Friendly
+                      B.D.S. Specialist
                     </span>
                   </div>
 
@@ -73,7 +73,7 @@ export default function Doctors({ onOpenBooking }) {
                   </div>
                   
                   <p className="text-xs text-slate-500 font-medium truncate">
-                    Siva Tooth Care, Karuppur, Salem
+                    Siva Tooth Care, Karuppur, Salem (10+ Yrs Clinical Experience)
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Doctors({ onOpenBooking }) {
                     onClick={() => setActiveDoctorModal(doc)}
                     className="w-full sm:w-auto px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold border border-slate-200 transition-all text-center"
                   >
-                    View Credentials & Bio
+                    View Clinical Photos & Bio
                   </button>
 
                   <button
@@ -131,15 +131,17 @@ export default function Doctors({ onOpenBooking }) {
               
               <div className="flex items-start justify-between border-b border-slate-100 pb-4">
                 <div className="flex items-center gap-3 sm:gap-4 min-w-0">
-                  <img
-                    src={activeDoctorModal.avatar}
-                    alt={activeDoctorModal.name}
-                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border border-sky-300 shrink-0"
-                  />
+                  <div className="w-14 h-16 sm:w-16 sm:h-20 rounded-2xl overflow-hidden bg-gradient-to-b from-sky-100 to-slate-100 border border-sky-300 shrink-0 flex items-end justify-center">
+                    <img
+                      src={activeDoctorModal.avatar}
+                      alt={activeDoctorModal.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                   <div className="min-w-0">
                     <h4 className="text-lg sm:text-xl font-bold text-slate-900 truncate">{activeDoctorModal.name}</h4>
                     <div className="text-xs font-bold text-sky-700 truncate">{activeDoctorModal.role}</div>
-                    <div className="text-[11px] text-slate-500 font-semibold truncate">{activeDoctorModal.degrees}</div>
+                    <div className="text-[11px] text-slate-500 font-semibold truncate">{activeDoctorModal.degrees} • Siva Tooth Care</div>
                   </div>
                 </div>
 
@@ -150,6 +152,23 @@ export default function Doctors({ onOpenBooking }) {
                   <X className="w-5 h-5" />
                 </button>
               </div>
+
+              {/* In-Clinic Live Procedure Photo */}
+              {activeDoctorModal.workingImage && (
+                <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative group">
+                  <img
+                    src={activeDoctorModal.workingImage}
+                    alt="Dr. Kiran Kumar treating patient at Siva Tooth Care"
+                    className="w-full h-48 sm:h-56 object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-3 sm:p-4">
+                    <span className="text-white text-xs font-bold flex items-center gap-1.5">
+                      <Sparkles className="w-3.5 h-3.5 text-sky-300 shrink-0" />
+                      <span>Dr. Kiran Kumar performing specialist dental procedure at Karuppur clinic</span>
+                    </span>
+                  </div>
+                </div>
+              )}
 
               <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                 <p>{activeDoctorModal.bio}</p>
